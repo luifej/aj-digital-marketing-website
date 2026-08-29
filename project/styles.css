@@ -1,0 +1,59 @@
+/* AJ Digital Marketing — shared interactive styles (hover/focus states) */
+
+a.nav-link:hover { color: #1f2937; }
+
+a.btn-nav-cta:hover {
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 26px -10px rgba(59,63,159,0.8);
+}
+
+a.btn-hero-primary:hover,
+button.btn-hero-primary:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px -16px rgba(59,63,159,0.85);
+}
+
+a.btn-hero-secondary:hover {
+  color: #1f2937;
+  border-color: #2BA8E0;
+  background: #f8fafc;
+}
+
+a.btn-outline-accent:hover {
+  background: #2BA8E0;
+  color: #fff;
+}
+
+a.foundation-card:hover {
+  border-color: #2BA8E0;
+  transform: translateY(-3px);
+}
+
+a.contact-link:hover { color: #1E9ED4; }
+
+.form-input:focus {
+  border-color: #2BA8E0;
+  background: #fff;
+}
+
+button.faq-toggle:hover { background: #f8fafc; }
+
+a.btn-cta-white:hover {
+  color: #3B3F9F;
+  transform: translateY(-2px);
+}
+
+a.social-icon:hover {
+  color: #fff;
+  border-color: #2BA8E0;
+  background: rgba(43,168,224,0.12);
+}
+
+a.footer-link:hover { color: #fff; }
+
+a.subnav-link:hover {
+  color: #1E9ED4;
+  border-bottom-color: #2BA8E0;
+}
