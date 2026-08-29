@@ -18,6 +18,10 @@
   a:hover { color: #3B3F9F; }
   section[id] { scroll-margin-top: 90px; }
   ::selection { background: #2BA8E0; color: #fff; }
+  #cal-booking { height: 650px; }
+  @media (max-width: 768px) {
+    #cal-booking { height: 750px; }
+  }
 </style>
 </head>
 <body>
@@ -333,7 +337,7 @@
           <a href="https://wa.me/16462507771" class="contact-link" style="display: flex; align-items: center; gap: 12px; font-size: 15.5px; color: #4b5563;"><i class="fa-brands fa-whatsapp" style="color: #2BA8E0; width: 18px;"></i>Send us a message on WhatsApp</a>
         </div>
         <div style="margin-top: 30px; border: 1px solid #e5e7eb; border-radius: 14px; background: #fff; overflow: hidden;">
-          <div id="cal-booking" style="min-height: 480px;"></div>
+          <div id="cal-booking" style="overflow-y: auto; overflow-x: hidden;"></div>
         </div>
       </div>
       <form id="booking-form" style="background: #fff; border: 1px solid #e5e7eb; border-radius: 20px; padding: 32px; box-shadow: 0 26px 60px -34px rgba(16,24,40,0.28); display: grid; gap: 18px;">
