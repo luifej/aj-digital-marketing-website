@@ -18,10 +18,6 @@
   a:hover { color: #3B3F9F; }
   section[id] { scroll-margin-top: 90px; }
   ::selection { background: #2BA8E0; color: #fff; }
-  #cal-booking { height: 650px; }
-  @media (max-width: 768px) {
-    #cal-booking { height: 750px; }
-  }
 </style>
 </head>
 <body>
@@ -326,24 +322,27 @@
   </section>
 
   <section id="book" style="padding: 96px 32px; background: #f8fafc; border-top: 1px solid #e5e7eb;">
-    <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: start;">
-      <div>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: #2BA8E0;">Free 20 minute call</div>
-        <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; margin: 12px 0 16px; color: #101828;">Let's Talk About What's Eating Your Time</h2>
+    <div style="max-width: 1100px; margin: 0 auto;">
+
+      <div style="max-width: 600px; margin-bottom: 40px;">
+        <h2 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 40px; line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 16px; color: #101828;">Let's Talk About What's Eating Your Time</h2>
         <p style="margin: 0; font-size: 16.5px; line-height: 1.65; color: #6b7280; max-width: 460px;">No pressure, no contracts, just a conversation about what's slowing you down and whether we're a fit to fix it.</p>
         <div style="margin-top: 30px; display: grid; gap: 14px;">
           <a href="mailto:luis@ajdigital.agency" class="contact-link" style="display: flex; align-items: center; gap: 12px; font-size: 15.5px; color: #4b5563;"><i class="fa-regular fa-envelope" style="color: #2BA8E0; width: 18px;"></i>luis@ajdigital.agency</a>
           <a href="tel:+16462507771" class="contact-link" style="display: flex; align-items: center; gap: 12px; font-size: 15.5px; color: #4b5563;"><i class="fa-solid fa-phone" style="color: #2BA8E0; width: 18px;"></i>(646) 250-7771</a>
           <a href="https://wa.me/16462507771" class="contact-link" style="display: flex; align-items: center; gap: 12px; font-size: 15.5px; color: #4b5563;"><i class="fa-brands fa-whatsapp" style="color: #2BA8E0; width: 18px;"></i>Send us a message on WhatsApp</a>
         </div>
-        <div style="margin-top: 30px; border: 1px solid #e5e7eb; border-radius: 14px; background: #fff; overflow: hidden;">
-          <div id="cal-booking" style="overflow-y: auto; overflow-x: hidden;"></div>
-        </div>
       </div>
-      <form id="booking-form" style="background: #fff; border: 1px solid #e5e7eb; border-radius: 20px; padding: 32px; box-shadow: 0 26px 60px -34px rgba(16,24,40,0.28); display: grid; gap: 18px;">
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: stretch;">
+        <div style="border: 1px solid #e5e7eb; border-radius: 14px; background: #fff; height: 650px; overflow: hidden;">
+          <div id="cal-booking" style="height: 100%; overflow-y: auto; overflow-x: hidden;"></div>
+        </div>
+        <form id="booking-form" style="background: #fff; border: 1px solid #e5e7eb; border-radius: 20px; padding: 32px; box-shadow: 0 26px 60px -34px rgba(16,24,40,0.28); display: grid; gap: 18px; height: 650px; overflow-y: auto;">
         <input type="hidden" name="access_key" value="66d73074-ac35-4635-87a5-22d0b4049ff3">
         <input type="hidden" name="subject" value="New consultation request — AJ Digital Marketing website">
         <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+        <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; line-height: 1.2; color: #101828; margin: 0 0 4px;">Prefer to Message Instead?</h3>
         <label style="display: grid; gap: 8px; font-size: 13.5px; font-weight: 500; color: #4b5563;">Name
           <input type="text" name="name" required placeholder="Your name" class="form-input" style="font-family: 'IBM Plex Sans', sans-serif; font-size: 15.5px; padding: 13px 15px; border: 1px solid #e5e7eb; border-radius: 11px; background: #f8fafc; color: #1f2937; outline: none; transition: border-color .16s ease, background .16s ease;" />
         </label>
@@ -360,7 +359,8 @@
           Book My Free Call<i class="fa-solid fa-arrow-right" style="font-size: 13px;"></i>
         </button>
         <p id="booking-form-note" style="margin: 0; font-size: 12.5px; color: #9ca3af; text-align: center;">We usually reply within an hour.</p>
-      </form>
+        </form>
+      </div>
     </div>
   </section>
 
