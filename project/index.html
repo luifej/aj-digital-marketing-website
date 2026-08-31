@@ -360,6 +360,18 @@
       </div>
 
       <div class="grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: stretch;">
+        <div class="mobile-book-cta" style="display: none; border: 1px solid #e5e7eb; border-radius: 14px; background: #fff; padding: 32px 24px; text-align: center;">
+          <div style="font-size: 32px; margin-bottom: 8px;">📅</div>
+          <h3 style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; color: #101828; margin: 0 0 6px;">Book Your Free Call</h3>
+          <p style="margin: 0 0 20px; font-size: 14.5px; color: #6b7280;">20 min · Pick a time that works for you</p>
+          <button
+            data-cal-link="aj-digital-marketing/15min"
+            data-cal-namespace="15min"
+            data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+            style="width: 100%; background: linear-gradient(135deg, #2BA8E0, #3B3F9F); color: #fff; border: none; padding: 14px 20px; border-radius: 10px; font-size: 15.5px; font-weight: 600; cursor: pointer;">
+            Book Now →
+          </button>
+        </div>
         <div class="cal-form-box" style="border: 1px solid #e5e7eb; border-radius: 14px; background: #fff; height: 650px; overflow: hidden;">
           <div id="cal-booking" style="height: 100%; overflow-y: auto; overflow-x: hidden;"></div>
         </div>
@@ -525,13 +537,13 @@
       p(cal, ar);
     };
   })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", "free-consultation", { origin: "https://cal.com" });
-  Cal.ns["free-consultation"]("inline", {
+  Cal("init", "15min", { origin: "https://cal.com" });
+  Cal.ns["15min"]("inline", {
     elementOrSelector: "#cal-booking",
     config: { layout: "month_view" },
     calLink: "aj-digital-marketing/15min"
   });
-  Cal.ns["free-consultation"]("ui", {
+  Cal.ns["15min"]("ui", {
     styles: { branding: { brandColor: "#2BA8E0" } },
     hideEventTypeDetails: false,
     layout: "month_view"

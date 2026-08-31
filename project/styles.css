@@ -73,7 +73,7 @@ a.subnav-link:hover {
 /* -- Stack fixed multi-column grids -- */
 @media (max-width: 768px) {
   .grid-2col { grid-template-columns: 1fr !important; }
-  .grid-4col { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-4col { grid-template-columns: 1fr !important; }
   .cal-form-box { height: 480px !important; }
 }
 @media (max-width: 640px) {
@@ -97,4 +97,56 @@ a.subnav-link:hover {
   article[style*="padding: 56px 32px 88px"] {
     padding: 56px 20px !important;
   }
+}
+
+/* ===== Mobile refinements (batch 2) ===== */
+
+/* 1. Hero phone mockup frame was too narrow */
+@media (max-width: 640px) {
+  #top div[style*="width: 320px"] {
+    width: 90% !important;
+    max-width: 360px !important;
+  }
+}
+
+/* 3. Booking section: swap inline calendar for a popup-trigger CTA card on mobile */
+@media (max-width: 768px) {
+  #book .grid-2col {
+    grid-template-columns: 1fr !important;
+  }
+  .mobile-book-cta {
+    display: block !important;
+    order: 1;
+  }
+  #book div.cal-form-box {
+    display: none !important;
+  }
+  #book form.cal-form-box {
+    order: 2;
+    height: auto !important;
+    overflow: visible !important;
+  }
+}
+
+/* 4. Closing CTA heading too large on mobile */
+@media (max-width: 640px) {
+  h2[style*="font-size: 44px"] {
+    font-size: 30px !important;
+    line-height: 1.15 !important;
+  }
+}
+
+/* 5. Services subnav: fade hint that it scrolls horizontally */
+.subnav-fade-wrapper {
+  position: relative;
+}
+.subnav-fade-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 36px;
+  background: linear-gradient(to right, rgba(248,250,252,0), rgba(248,250,252,1));
+  pointer-events: none;
 }
