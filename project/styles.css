@@ -57,3 +57,44 @@ a.subnav-link:hover {
   color: #1E9ED4;
   border-bottom-color: #2BA8E0;
 }
+
+/* ===== Mobile responsiveness ===== */
+
+/* -- Mobile hamburger menu -- */
+@media (max-width: 860px) {
+  header nav { display: none !important; }
+  header .btn-nav-cta { display: none !important; }
+  #mobile-menu-toggle { display: block !important; }
+}
+@media (min-width: 861px) {
+  #mobile-menu-panel { display: none !important; }
+}
+
+/* -- Stack fixed multi-column grids -- */
+@media (max-width: 768px) {
+  .grid-2col { grid-template-columns: 1fr !important; }
+  .grid-4col { grid-template-columns: repeat(2, 1fr) !important; }
+  .cal-form-box { height: 480px !important; }
+}
+@media (max-width: 640px) {
+  .grid-numrow { grid-template-columns: 1fr !important; }
+  .grid-numrow > *:first-child { margin-bottom: 4px; }
+}
+
+/* -- Fixed-height cover images that over-crop once the column narrows -- */
+@media (max-width: 768px) {
+  .img-hero-phone { height: 320px !important; }
+  .img-about-photo { height: 360px !important; }
+}
+
+/* -- Hero heading and section padding sanity on small phones -- */
+@media (max-width: 640px) {
+  h1 { font-size: 32px !important; line-height: 1.15 !important; }
+  section[style*="padding: 96px 32px"],
+  section[style*="padding: 80px 32px"],
+  section[style*="padding: 76px 32px 44px"],
+  section[style*="padding: 72px 32px 40px"],
+  article[style*="padding: 56px 32px 88px"] {
+    padding: 56px 20px !important;
+  }
+}
