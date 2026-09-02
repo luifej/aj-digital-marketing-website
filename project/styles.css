@@ -176,6 +176,14 @@ a.subnav-link:hover {
   transform-origin: bottom right;
 }
 
+.gtranslate_wrapper .gt_float_switcher {
+  border-radius: 14px !important;
+}
+
+.gtranslate_wrapper .gt_float_switcher img {
+  border-radius: 8px !important;
+}
+
 @media (max-width: 640px) {
   .gtranslate_wrapper {
     right: 12px;
