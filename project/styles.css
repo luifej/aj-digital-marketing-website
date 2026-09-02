@@ -165,12 +165,13 @@ a.subnav-link:hover {
 }
 
 /* GTranslate's float widget renders inside this wrapper (wrapper_selector).
-   bottom: 90px leaves a reserved ~60px gap below it, at bottom: 20px, for
-   the Canary chat widget once its real embed snippet is added. */
+   bottom: 120px clears Canary's widget (bottom: 16px, ~80px tall, so its
+   top edge sits at ~96px) with a clean ~24px gap above it. Measured live:
+   the previous bottom: 90px value overlapped Canary by ~6px. */
 .gtranslate_wrapper {
   position: fixed;
   right: 20px;
-  bottom: 90px;
+  bottom: 120px;
   z-index: 90;
   transform: scale(0.7);
   transform-origin: bottom right;
@@ -187,7 +188,7 @@ a.subnav-link:hover {
 @media (max-width: 640px) {
   .gtranslate_wrapper {
     right: 12px;
-    bottom: 76px;
+    bottom: 110px;
     transform: scale(0.6);
     transform-origin: bottom right;
   }
