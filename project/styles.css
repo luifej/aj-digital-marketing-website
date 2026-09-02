@@ -155,3 +155,35 @@ a.subnav-link:hover {
   background: linear-gradient(to right, rgba(248,250,252,0), rgba(248,250,252,1));
   pointer-events: none;
 }
+
+/* ===== Floating widgets: scroll-to-top (bottom-left), GTranslate + reserved
+   Canary space (bottom-right, GTranslate above, Canary below) ===== */
+
+#scroll-top-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -6px rgba(16,24,40,0.45);
+}
+
+/* GTranslate's float widget renders inside this wrapper (wrapper_selector).
+   bottom: 90px leaves a reserved ~60px gap below it, at bottom: 20px, for
+   the Canary chat widget once its real embed snippet is added. */
+.gtranslate_wrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  z-index: 90;
+  transform: scale(0.7);
+  transform-origin: bottom right;
+}
+
+@media (max-width: 640px) {
+  .gtranslate_wrapper {
+    right: 12px;
+    bottom: 76px;
+    transform: scale(0.6);
+    transform-origin: bottom right;
+  }
+  #scroll-top-btn {
+    left: 12px;
+  }
+}

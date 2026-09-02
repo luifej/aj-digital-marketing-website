@@ -258,6 +258,7 @@
           <div style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.55; color: #374151;"><i class="fa-solid fa-circle-check" style="color: #2BA8E0; font-size: 14px; margin-top: 3px;"></i>Answers FAQs, hours, and directions without anyone lifting a finger</div>
           <div style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.55; color: #374151;"><i class="fa-solid fa-circle-check" style="color: #2BA8E0; font-size: 14px; margin-top: 3px;"></i>Handles appointment booking around the clock</div>
           <div style="display: flex; gap: 12px; font-size: 15.5px; line-height: 1.55; color: #374151;"><i class="fa-solid fa-circle-check" style="color: #2BA8E0; font-size: 14px; margin-top: 3px;"></i>Already deployed for a real client (M Hair Studio), not just a demo</div>
+          <p style="margin: 0; font-size: 13.5px; line-height: 1.5; color: #9ca3af;">Also built and previously deployed a voice agent for phone bookings and call routing.</p>
         </div>
       </div>
     </div>
@@ -551,6 +552,26 @@
     layout: "month_view"
   });
 </script>
+
+<button id="scroll-top-btn" aria-label="Scroll to top" style="display: none; position: fixed; left: 20px; bottom: 20px; z-index: 90; width: 48px; height: 48px; border-radius: 50%; border: none; background: linear-gradient(135deg, #2BA8E0, #3B3F9F); color: #fff; cursor: pointer; box-shadow: 0 8px 20px -6px rgba(16,24,40,0.35); align-items: center; justify-content: center; font-size: 18px;">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<div class="gtranslate_wrapper"></div>
+<script>
+window.gtranslateSettings = {
+  "default_language":"en",
+  "languages":["en","es"],
+  "wrapper_selector":".gtranslate_wrapper",
+  "switcher_horizontal_position":"inline",
+  "flag_style":"3d",
+  "alt_flags":{"en":"usa","es":"mexico"}
+}
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+<!-- Reserved: Canary chat widget goes bottom-right, below GTranslate, once its real embed snippet is ready. Position it at right: 20px; bottom: 20px; (right: 12px; bottom: 12px; under 640px) so it sits under GTranslate without overlapping. -->
+
 <script src="mobile-menu.js"></script>
+<script src="scroll-top.js"></script>
 </body>
 </html>
