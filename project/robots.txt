@@ -1,0 +1,8 @@
+# robots.txt for ajdigital.agency
+# Allow all crawlers full access
+
+User-agent: *
+Disallow:
+
+# Point crawlers to the sitemap
+Sitemap: https://ajdigital.agency/sitemap.xml
