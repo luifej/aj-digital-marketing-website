@@ -196,3 +196,8 @@ a.subnav-link:hover {
     left: 12px;
   }
 }
+
+/* Keep the last footer row clear of the scroll-to-top button */
+footer {
+  padding-bottom: 96px !important;
+}
